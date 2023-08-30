@@ -6,17 +6,17 @@ useHead({
   },
 })
 const { $client } = useNuxtApp()
-const content = ref('')
-async function handleThis() {
-  content.value = await $client.hello.query()
-}
-setTimeout(handleThis, 2000)
+const content = await $client.hello.query()
+const { data } = await $client.getReviewedGuide.useQuery({ category: 'tips' })
 </script>
 
 <template>
   <div class="text-2xl font-bold w-full h-80vh flex items-center justify-center">
     <span>
       {{ content }}
+    </span>
+    <span>
+      {{ data }}
     </span>
   </div>
 </template>

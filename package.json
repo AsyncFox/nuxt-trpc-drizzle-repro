@@ -1,5 +1,5 @@
 {
-  "name": "the1068pictures",
+  "name": "repro",
   "private": true,
   "scripts": {
     "build": "nuxt build",
