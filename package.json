@@ -1,0 +1,38 @@
+{
+  "name": "the1068pictures",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "migrate": "drizzle-kit generate:pg && tsx ./scripts/migrate.ts"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.39.8",
+    "@nuxt/devtools": "latest",
+    "@nuxt/image": "1.0.0-rc.1",
+    "@types/node": "^18.17.11",
+    "@unocss/nuxt": "^0.54.3",
+    "@vueuse/core": "^10.3.0",
+    "@vueuse/nuxt": "^10.3.0",
+    "dotenv": "^16.3.1",
+    "drizzle-kit": "^0.19.13",
+    "eslint": "^8.47.0",
+    "motion": "^10.16.2",
+    "nuxt": "^3.7.0",
+    "pg": "^8.11.3"
+  },
+  "dependencies": {
+    "@trpc/client": "^10.38.0",
+    "@trpc/server": "^10.38.0",
+    "drizzle-orm": "^0.28.5",
+    "drizzle-zod": "^0.5.1",
+    "postcss-nested": "^6.0.1",
+    "postgres": "^3.3.5",
+    "superjson": "^1.13.1",
+    "trpc-nuxt": "^0.10.12",
+    "zod": "^3.22.2"
+  }
+}
